@@ -1,0 +1,9 @@
+# Smithery: the Infoharmoni Reader MCP server runs locally over stdio, installed straight from its repository.
+# (Standard library only; it never holds or asks for a private key.)
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction: |-
+    (config) => ({ command: 'uvx', args: ['--from', 'git+https://github.com/ausrine-labs/infoharmoni-reader', 'infoharmoni-reader-mcp'] })

@@ -1,0 +1,33 @@
+# Infoharmoni Reader MCP server as a one-line install. Meant for the ROOT of its own public repository
+# (ausrine-labs/infoharmoni-reader), with reader_mcp.py, SKILL.md, llms.txt, docs.md, smithery.yaml and
+# glama.json beside it. Kept here, in the lab, beside the service it fronts; creating that repository
+# is a step for its owner.
+#
+#   uvx --from git+https://github.com/ausrine-labs/infoharmoni-reader infoharmoni-reader-mcp
+#
+# No dependencies: the server is standard library only.
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infoharmoni-reader-mcp"
+version = "0.1.0"
+description = "Infoharmoni Reader as an MCP server: read one web page or PDF as clean text, $0.001 a page over x402. Returns the payment terms unpaid; never holds a key."
+readme = { text = "Infoharmoni Reader as an MCP server over stdio. One tool, read_page(url). Run: infoharmoni-reader-mcp.", content-type = "text/plain" }
+requires-python = ">=3.10"
+dependencies = []
+license = { text = "MIT" }
+keywords = ["mcp", "x402", "agents", "web", "pdf", "usdc"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+infoharmoni-reader-mcp = "reader_mcp:main"
+
+[tool.setuptools]
+py-modules = ["reader_mcp"]
