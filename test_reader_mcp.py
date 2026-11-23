@@ -25,7 +25,7 @@ import reader_mcp  # noqa: E402
 # The terms the live seller served on 2026-11-19, trimmed of the discovery extension.
 TERMS = {
     "x402Version": 2, "error": "Payment required",
-    "resource": {"url": "https://ausrine-who.onrender.com/read?url=https://example.com/",
+    "resource": {"url": "https://api.infoharmoni.com/read?url=https://example.com/",
                  "description": "Read a web page or a PDF as clean text", "mimeType": "application/json"},
     "accepts": [
         {"scheme": "exact", "network": "eip155:8453", "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",

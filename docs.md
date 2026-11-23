@@ -2,7 +2,7 @@
 
 Infoharmoni Reader reads one web page, text file or PDF and returns clean text. Agents pay $0.001 a page over x402. There is no API key and no account.
 
-Base URL: `https://ausrine-who.onrender.com`
+Base URL: `https://api.infoharmoni.com`
 
 Everything below was checked against the live route and the reader's code on 2026-11-19. Where the live terms and this file differ, the live 402 wins.
 
@@ -134,7 +134,7 @@ Without a payment:
 
 ```
 GET /read?url=https://example.com/ HTTP/1.1
-Host: ausrine-who.onrender.com
+Host: api.infoharmoni.com
 ```
 
 ```
@@ -144,7 +144,7 @@ cache-control: no-store
 payment-required: <the same terms, base64-encoded>
 
 {"x402Version":2,"error":"Payment required",
- "resource":{"url":"https://ausrine-who.onrender.com/read?url=https://example.com/",
+ "resource":{"url":"https://api.infoharmoni.com/read?url=https://example.com/",
    "description":"Read a web page or a PDF as clean text: give a URL, get its title and readable text (markdown). $0.001 a page over x402, no API key. Charged only when text comes back.",
    "mimeType":"application/json","serviceName":"Infoharmoni page reader"},
  "accepts":[
@@ -164,7 +164,7 @@ Then sign one of the `accepts` entries with your wallet and repeat the request:
 
 ```
 GET /read?url=https://example.com/ HTTP/1.1
-Host: ausrine-who.onrender.com
+Host: api.infoharmoni.com
 PAYMENT-SIGNATURE: <base64 payment payload your wallet made>
 ```
 

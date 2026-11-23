@@ -25,7 +25,7 @@ Claude Desktop, Cursor, or any MCP client:
 
     {"mcpServers": {"infoharmoni-reader": {"command": "python3", "args": ["/path/to/reader_mcp.py"]}}}
 
-READER_URL (default https://ausrine-who.onrender.com) names the seller. MIT.
+READER_URL (default https://api.infoharmoni.com) names the seller. MIT.
 """
 
 import base64
@@ -40,7 +40,7 @@ VERSION = "0.1.0"
 PROTOCOL = "2024-11-05"
 NAME = "infoharmoni-reader"
 TITLE = "Infoharmoni Reader"
-BASE = (os.environ.get("READER_URL") or "https://ausrine-who.onrender.com").rstrip("/")
+BASE = (os.environ.get("READER_URL") or "https://api.infoharmoni.com").rstrip("/")
 PATH = "/read"
 TIMEOUT = 30.0               # the seller's own read takes at most 15 s; the rest is the network
 MAX_ANSWER = 8 * 1024 * 1024  # bytes of answer read; a page is at most 200,000 characters
