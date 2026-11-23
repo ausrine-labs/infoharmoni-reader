@@ -2,7 +2,7 @@
 
 Any web page or PDF as clean text, for AI agents. $0.001 a page, paid per call in USDC over x402, on Base or Solana. No account and no API key.
 
-    GET https://ausrine-who.onrender.com/read?url=<url>
+    GET https://api.infoharmoni.com/read?url=<url>
 
 Unpaid, it answers 402 with the payment terms. Refusals are free, and a read that fails is not charged. Limits, refusals and the full request and response format: [docs.md](docs.md). For AI tools: [llms.txt](llms.txt).
 

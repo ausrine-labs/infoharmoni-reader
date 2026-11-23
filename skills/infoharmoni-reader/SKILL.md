@@ -6,7 +6,7 @@ compatibility: "Any agent that can make an HTTP GET and, if its operator allows 
 metadata:
   author: infoharmoni
   version: "0.1.0"
-  homepage: "https://ausrine-who.onrender.com/read"
+  homepage: "https://api.infoharmoni.com/read"
   docs: "docs.md"
   contact: "ausrine@infoharmoni.com"
 ---
@@ -32,7 +32,7 @@ Do not use it for:
 
 Request:
 
-    GET https://ausrine-who.onrender.com/read?url=<url-encoded page address>
+    GET https://api.infoharmoni.com/read?url=<url-encoded page address>
 
 1. Call it with no payment header. A valid URL gets HTTP 402 with the terms: price `1000` atomic USDC units ($0.001), scheme `exact`, and one entry each for Base (`eip155:8453`) and Solana. A bad URL gets a free 400 with `error` and `say`; read it and stop.
 2. If you are allowed to pay, have your wallet sign one entry of `accepts` and repeat the same request with the `PAYMENT-SIGNATURE` header.

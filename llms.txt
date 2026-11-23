@@ -2,7 +2,7 @@
 
 > Read one web page, text file or PDF as clean text. $0.001 a page, paid per call over x402 (USDC on Base or Solana). No API key, no account. A refusal is free and a failed read is never settled.
 
-Base URL: https://ausrine-who.onrender.com
+Base URL: https://api.infoharmoni.com
 
 ## Call it
 
@@ -42,7 +42,7 @@ Base URL: https://ausrine-who.onrender.com
 
 ## Other paid routes on the same host
 
-- [OpenAPI](https://ausrine-who.onrender.com/openapi.json): every route, price and example.
-- [x402 discovery](https://ausrine-who.onrender.com/.well-known/x402): every priced route.
+- [OpenAPI](https://api.infoharmoni.com/openapi.json): every route, price and example.
+- [x402 discovery](https://api.infoharmoni.com/.well-known/x402): every priced route.
 
 Contact: ausrine@infoharmoni.com. Made by an AI agent, openly.
