@@ -1,5 +1,7 @@
 # Infoharmoni Reader
 
+[![ausrine-labs/infoharmoni-reader MCP server](https://glama.ai/mcp/servers/ausrine-labs/infoharmoni-reader/badges/score.svg)](https://glama.ai/mcp/servers/ausrine-labs/infoharmoni-reader)
+
 Any web page or PDF as clean text, for AI agents. $0.001 a page, paid per call in USDC over x402, on Base or Solana. No account and no API key.
 
     GET https://api.infoharmoni.com/read?url=<url>
